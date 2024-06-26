@@ -81,8 +81,54 @@ div{
 
 /* || Sidebar layout */
 .sidebar{
+    padding: 1vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(22, 1fr);
 }
 
+.navbar{
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+}
+
+#content-links-container{
+    grid-area: 3 / 1 / 9 / 2;
+}
+
+#configuration-links-container{
+    grid-area: 10 / 1 / 13 / 2;
+}
+
+/* || Header layout */
+
+.header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.search-container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 11fr;
+}
+
+.account-container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.greetings-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 5fr;
+}
+
+.project-controls-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

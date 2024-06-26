@@ -9,20 +9,42 @@
 <body>
     <div class="sidebar">
         <div class="logo">Logo</div>
-        <div class="placeholder"></div>
-        <div class="navlink">Home</div>
-        <div class="navlink">Profile</div>
-        <div class="navlink">Messages</div>
-        <div class="navlink">History</div>
-        <div class="navlink">Tasks</div>
-        <div class="navlink">Communities</div>
-        <div class="placeholder"></div>
-        <div class="navlink">Settings</div>
-        <div class="navlink">Support</div>
-        <div class="navlink">Privacy</div>
-        
+        <div class="navbar" id="content-links-container">
+            <a class="navlink">Home</a>
+            <a class="navlink">Profile</a>
+            <a class="navlink">Messages</a>
+            <a class="navlink">History</a>
+            <a class="navlink">Tasks</a>
+            <a class="navlink">Communities</a>
+        </div>
+        <div class="navbar" id="configuration-links-container">
+            <a class="navlink">Settings</a>
+            <a class="navlink">Support</a>
+            <a class="navlink">Privacy</a>
+        </div>
     </div>
-    <div class="header"></div>
+    <div class="header">
+        <div class="search-container">
+            <button type="submit" class="search-btn">Search</button>
+            <input type="text" name="search_bar" id="search_bar">
+        </div>
+        <div class="account-container">
+            <button type="button" class="notifications">Notifications</button>
+            <img src="" alt="Avatar" class="avatar">
+            <div>Name Surname</div>
+            <p class="account name">Morgan Oakley</p>
+        </div>
+        <div class="greetings-container">
+            <img src="" alt="Avatar" class="avatar">
+            <p class="greeting">Hi there,</p>
+            <p class="account name">Morgan Oakley (@morgan)</p>
+        </div>
+        <div class="project-controls-container">
+            <button type="button" class="project-control">New</button>
+            <button type="button" class="project-control">Upload</button>
+            <button type="button" class="project-control">Share</button>
+        </div>
+    </div>
     <div class="dashboard-container"></div>
 </body>
 </html>
