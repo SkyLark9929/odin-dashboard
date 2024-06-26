@@ -181,3 +181,26 @@ div{
 }
 
 /* || Styling sections */
+:root{
+    --main-background-color: #e2e8f0;
+    --sidebar-background-color: #a78bfa;
+    --header-background-color: #f8fafc;
+}
+body{
+    background-color: var(--main-background-color);
+}
+
+.sidebar{
+    background-color: var(--sidebar-background-color);
+    color: var(--header-background-color);
+}
+
+.header{
+    background-color: var(--header-background-color);
+}
+
+.content{
+    background-color: var(--header-background-color);
+    border: solid 1px var(--header-background-color);
+    border-radius: 1vh;
+}
