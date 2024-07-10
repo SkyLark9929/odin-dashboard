@@ -193,6 +193,7 @@ img{
 :root{
     --main-background-color: #e2e8f0;
     --sidebar-background-color: #a78bfa;
+    --sidebar-background-gradient: linear-gradient(#5b21b6, #a78bfa);
     --header-background-color: #f8fafc;
     --black-font: #020617;
     color: var(--black-font);
@@ -212,7 +213,7 @@ h1{
 }
 
 .sidebar{
-    background-color: var(--sidebar-background-color);
+    background-image: var(--sidebar-background-gradient);
     color: var(--header-background-color);
 
     font-weight: bold;
@@ -226,4 +227,11 @@ h1{
     background-color: var(--header-background-color);
     border: solid 1px var(--header-background-color);
     border-radius: 1vh;
+}
+
+.search_bar{
+    background-color: var(--main-background-color);
+
+    border-radius: 999px;
+    border: solid var(--main-background-color);
 }
