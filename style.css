@@ -63,9 +63,13 @@ body{
 }
 
 img{
-    height: 1.25rem;
+    max-width: 100%;
+    max-height: auto;
 }
 
+.icon{
+    height: 1.75rem;
+}
 /* || Layout section */
 /* ||| Header, footer and dashboard container layout */
 .header{
@@ -80,7 +84,7 @@ img{
     grid-area: dashboard;
 }
 
-/* || Sidebar layout */
+/* ||| Sidebar layout */
 .sidebar{
     padding: 3vh;
     display: grid;
@@ -111,7 +115,7 @@ img{
     grid-area: 10 / 1 / 13 / 2;
 }
 
-/* || Header layout */
+/* ||| Header layout */
 .header{
     display: flex;
     justify-content: center;
@@ -119,7 +123,9 @@ img{
 }
 
 .header-grid-container{
-    margin: 1vh;
+    flex-grow: 1;
+
+    margin: 3vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
@@ -127,15 +133,22 @@ img{
 }
 
 .search-container{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 11fr;
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+
+.search-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .account-container{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    gap: 3vh;
+    justify-content: end;
+    align-items: center;
 }
 
 .greetings-container{
@@ -158,14 +171,14 @@ img{
     grid-area: 1 / 2 / 2 / 3;
 }
 
-/* || Main Layout */
+/* ||| Main Layout */
 
 .dashboard-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 1vh;
-    margin: 1vh;
+    margin: 3vh;
 }
 
 .main-content{
@@ -212,6 +225,11 @@ h1{
     font-size: 1rem;
 }
 
+input{
+    font-size: 1rem;
+}
+
+/* ||| Sidebar styling */
 .sidebar{
     background-image: var(--sidebar-background-gradient);
     color: var(--header-background-color);
@@ -229,9 +247,36 @@ h1{
     border-radius: 1vh;
 }
 
+/* ||| Sidebar styling */
+.minimal-button{
+    padding: 0;
+    border: none;
+}
+
 .search_bar{
+    flex-grow: 1;
     background-color: var(--main-background-color);
 
     border-radius: 999px;
     border: solid var(--main-background-color);
+}
+
+.search-btn{
+    background-color: var(--header-background-color);
+}
+
+.avatar{
+    border-radius: 50%; 
+}
+
+.account-container > .avatar{
+    height: 5vh;
+}
+
+.greetings-container > .avatar{
+    height: 10vh;
+}
+
+.notifications{
+    background-color: var(--header-background-color);
 }
