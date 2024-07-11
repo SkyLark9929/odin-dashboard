@@ -152,9 +152,10 @@ img{
 }
 
 .greetings-container{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 5fr;
+    display: flex;
+    gap: 3vh;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .project-controls-container{
@@ -217,7 +218,7 @@ body{
     background-color: var(--main-background-color);
 }
 
-h1, h2{
+h1, h2, p{
     font-weight: bold;
 }
 
@@ -253,6 +254,7 @@ input{
     border: none;
 }
 
+/* ||| Searchbar styling */
 .search_bar{
     flex-grow: 1;
     background-color: var(--main-background-color);
@@ -265,6 +267,7 @@ input{
     background-color: var(--header-background-color);
 }
 
+/* ||| Account info styling */
 .avatar{
     border-radius: 50%; 
 }
@@ -279,4 +282,11 @@ input{
 
 .notifications{
     background-color: var(--header-background-color);
+}
+
+/*||| Greeting styling */
+
+.greetings-container > div > .account-name{
+    font-size: 1.5rem;
+    margin-top: 1vh;
 }
