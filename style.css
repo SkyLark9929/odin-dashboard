@@ -62,13 +62,12 @@ body{
                          'sidebar dashboard';
 }
 
-img{
+.avatar{
     max-width: 100%;
-    max-height: auto;
 }
 
 .icon{
-    height: 1.75rem;
+    width: 1.75rem;
 }
 /* || Layout section */
 /* ||| Header, footer and dashboard container layout */
@@ -160,6 +159,7 @@ img{
 
 .project-controls-container{
     display: flex;
+    gap: 5vh;
     justify-content: space-around;
     align-items: center;
 }
@@ -206,8 +206,9 @@ img{
 /* || Styling sections */
 :root{
     --main-background-color: #e2e8f0;
-    --sidebar-background-color: #a78bfa;
-    --sidebar-background-gradient: linear-gradient(#5b21b6, #a78bfa);
+    --sidebar-background-color1: #a78bfa;
+    --sidebar-background-color2: #5b21b6;
+    --sidebar-background-gradient: linear-gradient(var(--sidebar-background-color2), var(--sidebar-background-color1));
     --header-background-color: #f8fafc;
     --black-font: #020617;
     color: var(--black-font);
@@ -289,4 +290,20 @@ input{
 .greetings-container > div > .account-name{
     font-size: 1.5rem;
     margin-top: 1vh;
+}
+
+/*||| Controls styling */
+
+.project-control{
+    background-color: var(--sidebar-background-color2);
+    color: var(--header-background-color);
+
+    border: solid var(--sidebar-background-color2);
+    border-radius: 999px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    flex-grow: 1;
+    height: 3.5vh;
 }
