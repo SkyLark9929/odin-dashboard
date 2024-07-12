@@ -194,6 +194,11 @@ body{
     grid-area: 1 / 1 / 2 / 3;
 }
 
+.h1-wrapper{
+    display: flex;
+    align-items: flex-end;
+}
+
 .announcements-trending-container{
     grid-area: 1 / 3 / 2 / 4;
 
@@ -203,6 +208,15 @@ body{
     gap: 1vh;
 }
 
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.content > p{
+    flex-grow: 1;
+}
 /* || Styling sections */
 :root{
     --main-background-color: #e2e8f0;
@@ -306,4 +320,17 @@ input{
 
     flex-grow: 1;
     height: 3.5vh;
+}
+
+.content{
+    padding: 2.5vh;
+}
+
+.content > p{
+    font-weight: 400;
+}
+
+.content-buttons-container{
+    display: flex;
+    justify-content: flex-end;
 }
