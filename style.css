@@ -217,6 +217,13 @@ body{
 .content > p{
     flex-grow: 1;
 }
+
+.content-buttons-container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2vh;
+}
+
 /* || Styling sections */
 :root{
     --main-background-color: #e2e8f0;
@@ -322,15 +329,22 @@ input{
     height: 3.5vh;
 }
 
-.content{
+.main-content > .content{
     padding: 2.5vh;
+
+    border-left: 0.5vh solid #5b21b6;
 }
 
 .content > p{
     font-weight: 400;
+    font-size: 0.9rem;
 }
 
-.content-buttons-container{
-    display: flex;
-    justify-content: flex-end;
+.content-buttons-container > button{
+    background-color: var(--header-background-color);
+    border: none;
+}
+
+.content-buttons-container > button > img{
+    width: 1.35rem;
 }
