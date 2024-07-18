@@ -261,7 +261,8 @@ body{
     --main-background-color: #e2e8f0;
     --sidebar-background-color1: #a78bfa;
     --sidebar-background-color2: #5b21b6;
-    --sidebar-background-gradient: linear-gradient(var(--sidebar-background-color2), var(--sidebar-background-color1));
+    --purple-hover-color: #7c3aed;
+    --sidebar-background-gradient: linear-gradient(var(--sidebar-background-color2), 80%, var(--sidebar-background-color1));
     --header-background-color: #f8fafc;
     --black-font: #020617;
     color: var(--black-font);
@@ -297,7 +298,7 @@ input{
 }
 
 .navlink:hover{
-    background-color: #a78bfa;
+    background-color: var(--purple-hover-color);
 }
 
 .header{
@@ -368,6 +369,11 @@ input{
 
     flex-grow: 1;
     height: 3.5vh;
+}
+
+.project-control:hover{
+    background-color: var(--purple-hover-color);
+    border-color: var(--purple-hover-color);
 }
 
 .main-content > .content{
