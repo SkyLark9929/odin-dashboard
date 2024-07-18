@@ -319,10 +319,13 @@ input{
 
 /* ||| Searchbar styling */
 .minimal-button{
-    padding: 0.5vh;
     border: none;
     border: solid var(--header-background-color);
     border-radius: 999px;
+}
+
+.minimal-button > img{
+    margin: 0.5vh;
 }
 
 .minimal-button:hover{
