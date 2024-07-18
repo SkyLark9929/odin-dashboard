@@ -211,6 +211,12 @@ body{
     grid-area: 1 / 1 / 2 / 3;
 }
 
+.minimal-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .h1-wrapper{
     display: flex;
     align-items: flex-end;
@@ -313,8 +319,14 @@ input{
 
 /* ||| Searchbar styling */
 .minimal-button{
-    padding: 0;
+    padding: 0.5vh;
     border: none;
+    border: solid var(--header-background-color);
+    border-radius: 999px;
+}
+
+.minimal-button:hover{
+    background-color: var(--main-background-color);
 }
 
 .search_bar{
