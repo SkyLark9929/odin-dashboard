@@ -106,7 +106,8 @@ body{
     display: grid;
     grid-template-columns: 1fr 7fr;
     grid-template-rows: subgrid;
-    gap: 2vh;
+    align-items: center;
+    gap: 1vh;
 }
 
 .navlink{
@@ -115,6 +116,11 @@ body{
     grid-template-columns: subgrid;
     grid-template-rows: 1fr;
     align-items: center;
+    padding: 0.8vh;
+}
+
+.navlink > h1{
+    align-self: center;
 }
 
 #content-links-container{
@@ -284,6 +290,14 @@ input{
     color: var(--header-background-color);
 
     font-weight: bold;
+}
+
+.navlink{
+    border-radius: 999px;
+}
+
+.navlink:hover{
+    background-color: #a78bfa;
 }
 
 .header{
