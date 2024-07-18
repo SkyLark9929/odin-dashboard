@@ -84,6 +84,17 @@ body{
 }
 
 /* ||| Sidebar layout */
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vh;
+}
+
+.logo > h1{
+    font-size: calc(1.75rem + 0.83vh);
+    align-self: center;
+}
+
 .sidebar{
     padding: 3vh;
     display: grid;
@@ -217,7 +228,10 @@ body{
 .announcements-container hr{
     margin-left: 0;
     margin-right: 0;
+}
 
+.announcements-container h1{
+    margin-bottom: 0.5vh;
 }
 
 .content{
@@ -282,13 +296,12 @@ input{
     border-radius: 1vh;
 }
 
-/* ||| Sidebar styling */
+/* ||| Searchbar styling */
 .minimal-button{
     padding: 0;
     border: none;
 }
 
-/* ||| Searchbar styling */
 .search_bar{
     flex-grow: 1;
     background-color: var(--main-background-color);
