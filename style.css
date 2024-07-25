@@ -185,6 +185,12 @@ body{
     align-items: center;
 }
 
+.project-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .greetings-container>.avatar {
     grid-area: 1 / 1 / 3 / 2;
 }
@@ -227,6 +233,7 @@ body{
 }
 
 .announcements-trending-container{
+    height: 75vh;
     grid-area: 1 / 2 / 2 / 3;
 
     display: grid;
@@ -271,11 +278,12 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1vh;
 }
 
 .trending-account{
     display: flex;
-    flex-grow: 0.25;
     align-items: center;
     gap: 1vh;
 }
