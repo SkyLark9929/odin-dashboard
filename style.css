@@ -277,6 +277,7 @@ body{
     display: flex;
     flex-grow: 0.25;
     align-items: center;
+    gap: 1vh;
 }
 
 .trending-account .avatar{
@@ -287,6 +288,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 0.5vh;
 }
 /* || Styling sections */
 :root{
