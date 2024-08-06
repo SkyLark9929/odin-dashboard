@@ -241,7 +241,7 @@ body{
 
     display: grid;
     grid-template-columns: subgrid;
-    grid-template-rows: 5vh 1fr 5vh 1fr;
+    grid-template-rows: 5vh 1fr 5vh;
     gap: 1vh;
 }
 
@@ -252,12 +252,20 @@ body{
 }
 
 .announcements-container hr{
-    margin-left: 0;
-    margin-right: 0;
+    flex-shrink: 1;
+    margin: 0;
+    min-height: 0;
 }
 
 .announcements-container h1{
     margin-bottom: 0.5vh;
+    flex-shrink: 1;
+}
+
+.announcements-container p{
+    min-height: 0;
+    text-overflow: ellipsis;
+    flex-shrink: 1;
 }
 
 .content{
